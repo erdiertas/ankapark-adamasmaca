@@ -1,0 +1,205 @@
+#erdi-adamasmaca .background-image {
+    bottom: 300px;
+    height: 960px;
+    width: 100%;
+    background-image: url("img/background_listscreen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#erdi-adamasmaca .game-area > div {
+    padding: 10px;
+    width: 100%;
+    background-image: url("img/background_title.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#erdi-adamasmaca .game-area > div.active {
+    display: table;
+}
+
+#erdi-adamasmaca .game-area .category-page {
+    background-image: url("img/background_listscreen.jpg");
+}
+
+#erdi-adamasmaca .sound {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url("img/SoundOn_btn_1.png") no-repeat center;
+    background-size: contain;
+    float: right;
+    display: block;
+    outline: none;
+
+}
+#erdi-adamasmaca .logo {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    background: url("img/Logo.png") no-repeat center;
+    background-size: 50%;
+    display: block;
+    outline: none;
+    text-align: center;
+}
+
+#erdi-adamasmaca .play {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: url("img/Play_btn.png") no-repeat center;
+    background-size: contain;
+    outline: none;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#erdi-adamasmaca .category-page .list .item {
+    position: relative;
+    width: 100%;
+    height: 78px;
+    background: url(img/Category_bg.png) no-repeat center;
+    background-size: contain;
+    outline: none;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    float: none;
+}
+
+
+#erdi-adamasmaca .game-area .play-page {
+    background-image: url("img/background_game.jpg");
+}
+
+#erdi-adamasmaca .play-page .select-letters div,
+#erdi-adamasmaca .play-page .letters div {
+    background-image: url(img/letter_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+
+
+}
+#erdi-adamasmaca .play-page .select-letters div {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    font-size: 50px;
+}
+#erdi-adamasmaca .play-page .letters div {
+    background-image: url(img/Word_bg_white.png);
+    font-size: 0;
+}
+#erdi-adamasmaca .play-page .letters div.open {
+    background-image: url(img/letter_bg.png);
+    font-size: 35px;
+}
+#erdi-adamasmaca .play-page .select-letters div.click {
+    background-image: url(img/hidden_letter.png);
+    font-size: 0;
+}
+#erdi-adamasmaca .play-page .select-letters,
+#erdi-adamasmaca .play-page .letters {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    float: none;
+    display:                 flex;
+    display:                 -webkit-flex; /* Safari 8 */
+    flex-wrap:               wrap;
+    -webkit-flex-wrap:       wrap;         /* Safari 8 */
+    justify-content:         center;
+    -webkit-justify-content: center;       /* Safari 8 */
+}
+#erdi-adamasmaca .play-page .select-letters {
+    margin-bottom: 30px;
+}
+#erdi-adamasmaca .play-page .hangman {
+    position: relative;
+    margin: 40px auto;
+    width: 320px;
+    height: 320px;
+    background: url(img/bg_hangman.png) no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    display: table;
+}
+
+#erdi-adamasmaca .play-page .head {
+    position: absolute;
+    left: 109px;
+    top: 28px;
+    width: 110px;
+    height: 115px;
+    background: url(img/head1.png) no-repeat center;
+    background-size: 100%;
+}
+#erdi-adamasmaca .play-page .body {
+    position: absolute;
+    left: 90px;
+    top: 123px;
+    width: 142px;
+    height: 115px;
+    background: url(img/body.png) no-repeat center;
+    background-size: 100%;
+}
+#erdi-adamasmaca .play-page .hangman .left-hand {
+    position: absolute;
+    left: 38px;
+    top: 88px;
+    width: 78px;
+    height: 84px;
+    background: url(img/left_hand.png) no-repeat center;
+    background-size: 100%;
+}
+#erdi-adamasmaca .play-page .hangman .right-hand {
+    position: absolute;
+    left: 201px;
+    top: 71px;
+    width: 84px;
+    height: 115px;
+    background: url(img/right_hand.png) no-repeat center;
+    background-size: 100%;
+}
+#erdi-adamasmaca .play-page .hangman .left-leg {
+    position: absolute;
+    left: 99px;
+    top: 197px;
+    height: 97px;
+    width: 63px;
+    background: url(img/left_leg.png) no-repeat center;
+    background-size: 100%;
+}
+#erdi-adamasmaca .play-page .hangman .right-leg {
+    position: absolute;
+    left: 165px;
+    top: 193px;
+    height: 97px;
+    width: 63px;
+    background: url(img/right_leg.png) no-repeat center;
+    background-size: 100%;
+}
