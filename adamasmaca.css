@@ -21,6 +21,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: none;
+    font-family: 'Baloo Chettan', cursive;
 }
 
 #erdi-adamasmaca .game-area > div.active {
@@ -46,9 +47,9 @@
     position: relative;
     margin-top: 30px;
     width: 100%;
-    height: 500px;
-    background: url("img/Logo.png") no-repeat center;
-    background-size: 50%;
+    height: 200px;
+    background: url(img/Logo.png) no-repeat center;
+    background-size: contain;
     display: block;
     outline: none;
     text-align: center;
@@ -125,7 +126,6 @@
     margin: 0 auto;
     margin-top: 5px;
     text-align: center;
-    font-weight: bold;
     color: white;
     float: none;
     display:                 flex;
@@ -147,6 +147,10 @@
     background-size: 100%;
     text-align: center;
     display: table;
+}
+
+#erdi-adamasmaca .play-page .hangman > div {
+    transition: left 1s, top 1s;
 }
 
 #erdi-adamasmaca .play-page .head {
@@ -202,4 +206,15 @@
     width: 63px;
     background: url(img/right_leg.png) no-repeat center;
     background-size: 100%;
+}
+#erdi-adamasmaca .finger {
+    position: absolute;
+    top: -800px;
+    left: 165px;
+    width: 500px;
+    height: 500px;
+    background: url(img/finger.png) no-repeat center;
+    background-size: 100%;
+    transition: left 0.8s, top 0.7s;
+
 }

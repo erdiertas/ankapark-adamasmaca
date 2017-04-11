@@ -1,1 +1,14 @@
-{"Meyve":["ELMA","MUZ"],"Sebze":["MARUL","PIRASA"],"\u015eehir":["İSKENDERUN","URFA"]}
+{
+  "Meyve":[
+    "ELMA",
+    "MUZ"
+  ],
+  "Sebze":[
+    "MARUL",
+    "PIRASA"
+  ],
+  "\u015eehir":[
+    "İSKENDERUN",
+    "URFA"
+  ]
+}
