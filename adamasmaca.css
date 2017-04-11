@@ -41,8 +41,26 @@
     float: right;
     display: block;
     outline: none;
-
+    display: none;
 }
+
+#erdi-adamasmaca .level {
+    font-size: 30px;
+    float: left;
+}
+
+#erdi-adamasmaca .home {
+    position: relative;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    background: url("img/home_btn.png") no-repeat center;
+    background-size: contain;
+    float: right;
+    display: block;
+    outline: none;
+}
+
 #erdi-adamasmaca .logo {
     position: relative;
     margin-top: 30px;
@@ -83,7 +101,6 @@
     float: none;
 }
 
-
 #erdi-adamasmaca .game-area .play-page {
     background-image: url("img/background_game.jpg");
 }
@@ -99,26 +116,30 @@
     width: 55px;
     line-height: 55px;
 
-
 }
+
 #erdi-adamasmaca .play-page .select-letters div {
     height: 75px;
     width: 75px;
     line-height: 75px;
     font-size: 50px;
 }
+
 #erdi-adamasmaca .play-page .letters div {
     background-image: url(img/Word_bg_white.png);
     font-size: 0;
 }
+
 #erdi-adamasmaca .play-page .letters div.open {
     background-image: url(img/letter_bg.png);
     font-size: 35px;
 }
+
 #erdi-adamasmaca .play-page .select-letters div.click {
     background-image: url(img/hidden_letter.png);
     font-size: 0;
 }
+
 #erdi-adamasmaca .play-page .select-letters,
 #erdi-adamasmaca .play-page .letters {
     position: relative;
@@ -128,16 +149,19 @@
     text-align: center;
     color: white;
     float: none;
-    display:                 flex;
-    display:                 -webkit-flex; /* Safari 8 */
-    flex-wrap:               wrap;
-    -webkit-flex-wrap:       wrap;         /* Safari 8 */
-    justify-content:         center;
-    -webkit-justify-content: center;       /* Safari 8 */
+    display: flex;
+    display: -webkit-flex; /* Safari 8 */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari 8 */
+    justify-content: center;
+    -webkit-justify-content: center; /* Safari 8 */
 }
+
 #erdi-adamasmaca .play-page .select-letters {
     margin-bottom: 30px;
+    cursor: pointer;
 }
+
 #erdi-adamasmaca .play-page .hangman {
     position: relative;
     margin: 40px auto;
@@ -148,6 +172,23 @@
     text-align: center;
     display: table;
 }
+#erdi-adamasmaca .play-page .cross,
+#erdi-adamasmaca .play-page .ok {
+    position: relative;
+    margin: 40px auto;
+    margin-top: -300px;
+    width: 100%;
+    height: 300px;
+    background-image: url(img/okIcon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: none;
+}
+#erdi-adamasmaca .play-page .cross {
+    background-image: url(img/crossIcon.png);
+}
 
 #erdi-adamasmaca .play-page .hangman > div {
     transition: left 1s, top 1s;
@@ -155,58 +196,64 @@
 
 #erdi-adamasmaca .play-page .head {
     position: absolute;
-    left: 109px;
     top: 28px;
+    left: 109px;
     width: 110px;
     height: 115px;
     background: url(img/head1.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .play-page .body {
     position: absolute;
-    left: 90px;
     top: 123px;
+    left: 90px;
     width: 142px;
     height: 115px;
     background: url(img/body.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .play-page .hangman .left-hand {
     position: absolute;
-    left: 38px;
     top: 88px;
+    left: 38px;
     width: 78px;
     height: 84px;
     background: url(img/left_hand.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .play-page .hangman .right-hand {
     position: absolute;
-    left: 201px;
     top: 71px;
+    left: 201px;
     width: 84px;
     height: 115px;
     background: url(img/right_hand.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .play-page .hangman .left-leg {
     position: absolute;
-    left: 99px;
     top: 197px;
+    left: 99px;
     height: 97px;
     width: 63px;
     background: url(img/left_leg.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .play-page .hangman .right-leg {
     position: absolute;
-    left: 165px;
     top: 193px;
+    left: 165px;
     height: 97px;
     width: 63px;
     background: url(img/right_leg.png) no-repeat center;
     background-size: 100%;
 }
+
 #erdi-adamasmaca .finger {
     position: absolute;
     top: -800px;
