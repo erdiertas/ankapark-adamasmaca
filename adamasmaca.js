@@ -14,12 +14,8 @@ var erdiAdamAsmaca = {
         var selectAlpha = [];
         for (var i = 0; i < max; i++) {
             var index = this.getRandomInt(0, a.length - 1);
-            if (a[index] !== undefined) {
-                selectAlpha.push(a[index]);
-                a.splice($.inArray(a[index], a), 1);
-            } else {
-                i--;
-            }
+            selectAlpha.push(a[index]);
+            a.splice($.inArray(a[index], a), 1);
         }
         return selectAlpha;
     },
@@ -47,7 +43,7 @@ var erdiAdamAsmaca = {
         if (page == 'category') {
             $("#erdi-adamasmaca .category-page .list").html("");
             $.each(this.data, function (i, v) {
-                $("#erdi-adamasmaca .category-page .list").append('<a class="item">' + i + '</a>');
+                $("#erdi-adamasmaca .category-page .list").append('<a href="javascript:;" class="item">' + i + '</a>');
             })
         } else if (page == 'play') {
             this.allowCharSelect = true;
@@ -77,7 +73,7 @@ var erdiAdamAsmaca = {
             var n_al = [];
             var e_l = $("#erdi-adamasmaca .play-page .letters");
             var e_sL = $("#erdi-adamasmaca .play-page .select-letters");
-            $("#erdi-adamasmaca .cross, #erdi-adamasmaca .ok").css("display","none");
+            $("#erdi-adamasmaca .cross, #erdi-adamasmaca .ok").css("display", "none");
             $("#erdi-adamasmaca .play-page .head").css({
                 top: '28px',
                 left: '109px'
@@ -102,14 +98,14 @@ var erdiAdamAsmaca = {
                 top: '193px',
                 left: '165px'
             });
-            $("#erdi-adamasmaca .level span").text(l+1);
+            $("#erdi-adamasmaca .level span").text(l + 1);
             $.each(u_k, function (i, v) {
                 if (jQuery.inArray(v, al) !== -1) {
                     f_k.splice(jQuery.inArray(v, f_k), 1);
                 }
             });
             $.each(al, function (i, v) {
-                if (jQuery.inArray(v, u_k) === -1) {
+                 if (jQuery.inArray(v, u_k) === -1) {
                     if (f_k.length > 0) {
                         al[i] = f_k[0];
                         f_k.splice(0, 1);
@@ -148,11 +144,11 @@ var erdiAdamAsmaca = {
                     setTimeout(function () {
                         var s = erdiAdamAsmaca.selectCategory;
                         var c = $.cookie('erdiAdamAsmaca');
-                        c[s] = c[s]+1;
+                        c[s] = c[s] + 1;
                         $.cookie('erdiAdamAsmaca', c);
                         erdiAdamAsmaca.openPage('play');
-                    },2000)
-                }else{
+                    }, 2000)
+                } else {
                     this.allowCharSelect = true;
                 }
             } else {
@@ -169,7 +165,7 @@ var erdiAdamAsmaca = {
                     }, 1000);
                     if (this.hangmanList.length == 0) {
                         $("#erdi-adamasmaca .cross").fadeIn(500);
-                    }else{
+                    } else {
                         setTimeout(function () {
                             erdiAdamAsmaca.allowCharSelect = true;
                         }, 1300);
