@@ -92,8 +92,9 @@ var game = {
             $.each(n_al, function (i, v) {
                 e_sL.append('<div data-value="' + v + '">' + v + '</div>')
             });
-            $(".letters, .select-letters").delay(500).fadeIn();
-            $($(".personality > div").get(l % 3)).slideDown();
+            $(".letters, .select-letters").delay(500).fadeIn(400);
+            $($(".personality > div").get(l % 3)).slideDown(500);
+            $($(".backgrounds > div").get(l % 3)).slideDown(700);
         }
         // game.resize();
     },
@@ -147,7 +148,7 @@ var game = {
         hideIcons: function () {
             $("#cross, #ok").slideUp();
             $(".personality svg g").show();
-            $(".letters, .select-letters, .personality > div").stop(true, true).slideUp(700);
+            $(".letters, .select-letters, .personality > div, .backgrounds > div").stop(true, true).slideUp(700);
         },
         resize: function () {
             $(".personality > div").each(function () {

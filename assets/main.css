@@ -112,6 +112,7 @@ body {
     top: 10px;
     left: 20px;
     font-size: 28px;
+    z-index: 1;
 }
 
 .level .level-count {
@@ -164,8 +165,8 @@ body {
     color: #f13a00;
 }
 
-.background {
-    position: absolute;
+.backgrounds > div {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -174,9 +175,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
+    z-index: 0;
+    display: none;
 }
-
+.backgrounds > div:nth-child(2) {
+    background-image: url("img/maymun_bg.png");
+}
+.backgrounds > div:nth-child(3) {
+    background-image: url("img/canavar_bg.png");
+}
 .personality > div {
     position: fixed;
     width: 100%;
@@ -196,14 +203,13 @@ body {
     height: 55px;
     width: 55px;
     line-height: 55px;
-
 }
 
 .select-letters div {
-    height: 75px;
-    width: 75px;
-    line-height: 75px;
-    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 30px;
 }
 
 .letters div {
@@ -237,6 +243,7 @@ body {
     -webkit-flex-wrap: wrap; /* Safari 8 */
     justify-content: center;
     -webkit-justify-content: center; /* Safari 8 */
+    z-index: 1;
 }
 
 .select-letters {
