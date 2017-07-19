@@ -1,13 +1,31 @@
 {
   "Meyve":[
     "ELMA",
-    "MUZ"
+    "MUZ",
+    "KİVİ",
+    "ARMUT"
   ],
   "Sebze":[
     "MARUL",
     "PIRASA"
   ],
-  "\u015eehir":[
+  "\u015eehir3":[
+    "İSKENDERUN",
+    "URFA"
+  ],
+  "\u015eeheir":[
+    "İSKENDERUN",
+    "URFA"
+  ],
+  "\u015eewhir":[
+    "İSKEwNDERUN",
+    "URFA"
+  ],
+  "\u015eqehir":[
+    "İSKENDERUN",
+    "URFA"
+  ],
+  "\u015edehir":[
     "İSKENDERUN",
     "URFA"
   ]
